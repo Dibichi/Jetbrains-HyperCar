@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>{% block title %}News Item{% endblock %}</title>
+</head>
+<body>
+{% block content %}Empty Content{% endblock %}
+<p><a href="/welcome/">Main Page</a> | <a href="/menu/">Menu</a>| <a href="/processing/">Process</a> | <a href="/next/">Next</a></p>
+</body>
+</html>

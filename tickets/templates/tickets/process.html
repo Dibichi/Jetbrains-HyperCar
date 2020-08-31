@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} Process Menu {% endblock %}
+{% block content %}
+	<div>Change oil queue: {{ change_oil | length }}</div>
+	<div>Inflate tires queue: {{ inflate_tires | length }}</div>
+	<div>Get diagnostic queue: {{ diagnostic | length }}</div>
+
+	<form method="post">{% csrf_token %}
+	  <button type="submit">Process next</button>
+	</form>
+{% endblock %}
